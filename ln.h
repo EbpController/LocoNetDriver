@@ -38,6 +38,7 @@ void sendLnMessage(void);
 void txHandler(void);
 void startCmpDelay(void);
 void startLinebreak(void);
+void startLinebreakExtension(void);
 
 uint16_t getRandomValue(uint16_t);
 bool isLnFree(void);

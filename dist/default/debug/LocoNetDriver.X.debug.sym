@@ -7,7 +7,7 @@ __S0 2500 0 ABS 0
 __S1 B6 0 ABS 0
 __S4 0 0 ABS 0
 __S5 0 0 ABS 0
-__S7 F80 0 ABS 0
+__S7 EEF 0 ABS 0
 __Hintentry 0 0 ABS 0
 __Lintentry 0 0 ABS 0
 i1___simple_search_fl@best 13 0 COMRAM 1
@@ -109,8 +109,8 @@ _SPBRGH FB0 0 ABS 0
 free@cptr 7 0 COMRAM 1
 __Hfarbss 0 0 FARRAM 0
 __Lfarbss 0 0 FARRAM 0
-__Hintcode 4 0 CODE 0
-__Lintcode 4 0 CODE 0
+__Hintcode 6 0 CODE 0
+__Lintcode 6 0 CODE 0
 __Hfardata 0 0 FARRAM 0
 __Lfardata 0 0 FARRAM 0
 _OSCCON FD3 0 ABS 0
@@ -122,7 +122,7 @@ isa$xinst 0 0 ABS 0
 __HnvFARRAM 0 0 FARRAM 0
 __LnvFARRAM 0 0 FARRAM 0
 ?i1_malloc 15 0 COMRAM 1
-___heap_hi F80 0 HEAP 7
+___heap_hi EEF 0 HEAP 7
 __end_of_lnIsr 140 0 CODE 0
 __end_of___expand_heap 1F86 0 CODE 0
 __end_of___awmod 1ED8 0 CODE 0
@@ -135,7 +135,7 @@ i1___expand_heap@n 5 0 COMRAM 1
 isa$std 1 0 ABS 0
 _malloc 16F6 0 CODE 0
 stackhi 0 0 ABS 0
-__Hheap F80 0 HEAP 7
+__Hheap EEF 0 HEAP 7
 __Lheap B6 0 HEAP 7
 i1___expand_heap@pn 1 0 COMRAM 1
 __HcstackBANK0 0 0 ABS 0
@@ -429,7 +429,7 @@ _lnTxMessage 4D 0 COMRAM 1
 ___simple_search_fl@best_last 88 0 BANK0 1
 __smallconst 1000 0 SMALLCONST 0
 ___simple_search_fl@remaining_size 86 0 BANK0 1
-__Hreset_vec 4 0 CODE 0
+__Hreset_vec 6 0 CODE 0
 __Lreset_vec 0 0 CODE 0
 __end_ofi1_malloc 19BC 0 CODE 0
 __accesstop 80 0 ABS 0
@@ -466,16 +466,16 @@ ___awmod@counter 5 0 COMRAM 1
 _lastRandomValue 51 0 COMRAM 1
 __end_of_getRandomValue 240C 0 CODE 0
 %segments
-heap B6 F7F HEAP B6 7
-reset_vec 0 3 CODE 0 0
+heap B6 EEE HEAP B6 7
+reset_vec 0 5 CODE 0 0
 intcodelo 18 143 CODE 18 0
 smallconst 1000 1001 SMALLCONST 1000 0
 cstackCOMRAM 1 58 COMRAM 1 1
 cstackBANK0 80 B5 BANK0 80 1
 text26 1002 24FF CODE 1002 0
 %locals
-dist/default/production\LocoNetDriver.X.production.o
-C:\Users\user\AppData\Local\Temp\xcAsfvs.\driver_tmp_1.s
+dist/default/debug\LocoNetDriver.X.debug.o
+C:\Users\user\AppData\Local\Temp\xcAs9ro.\driver_tmp_1.s
 823 2394 0 CODE 0
 825 2394 0 CODE 0
 828 2394 0 CODE 0
@@ -665,8 +665,8 @@ ln.c
 36 24F4 0 CODE 0
 40 24F8 0 CODE 0
 42 24FA 0 CODE 0
-C:\Users\user\AppData\Local\Temp\xcAsfvs.\driver_tmp_1.s
-3593 18 0 CODE 0
+C:\Users\user\AppData\Local\Temp\xcAs9ro.\driver_tmp_1.s
+3611 18 0 CODE 0
 ln.c
 99 18 0 CODE 0
 101 3E 0 CODE 0

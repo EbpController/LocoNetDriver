@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
-  <executable name="dist/default/production\LocoNetDriver.X.production.hex">
+  <executable name="dist/default/debug\LocoNetDriver.X.debug.hex">
     <memory name="program">
       <units>bytes</units>
       <length>65536</length>
-      <used>5680</used>
-      <free>59856</free>
+      <used>5682</used>
+      <free>59854</free>
     </memory>
     <memory name="data">
       <units>bytes</units>

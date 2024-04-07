@@ -4,22 +4,24 @@ Linker command line:
 
 -W-3 \
   --edf=C:\Program Files\Microchip\xc8\v2.45\pic\dat\20230818022343_en.msgs \
-  -cn -h+dist/default/production\LocoNetDriver.X.production.sym \
-  --cmf=dist/default/production\LocoNetDriver.X.production.cmf -z -Q18F4620 \
-  -oC:\Users\user\AppData\Local\Temp\xcAsfvs.\driver_tmp_3.o \
+  -cn -h+dist/default/debug\LocoNetDriver.X.debug.sym \
+  --cmf=dist/default/debug\LocoNetDriver.X.debug.cmf -z -Q18F4620 \
+  -oC:\Users\user\AppData\Local\Temp\xcAs9ro.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
-  -Mdist/default/production/LocoNetDriver.X.production.map \
-  --md=C:\Users\user\AppData\Local\Temp\xcAsfvs.\driver_tmp_0.dat -E1 \
-  -ver=XC8 Compiler --acfsm=1493 -AHEAP=0B6h-0F7Fh -pheap=HEAP \
-  -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh -ASMALLCONST=01000h-010FFhx240 \
-  -AMEDIUMCONST=01000h-0FFFFh -ACOMRAM=01h-07Fh -AABS1=00h-0F7Fh \
-  -ABIGRAM=01h-0F7Fh -ARAM=080h-0FFh,0100h-01FFhx14,0F00h-0F7Fh \
-  -ABANK0=080h-0FFh -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh \
-  -ABANK3=0300h-03FFh -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh \
-  -ABANK6=0600h-06FFh -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh \
-  -ABANK9=0900h-09FFh -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh \
-  -ABANK12=0C00h-0CFFh -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0EFFh \
-  -ABANK15=0F00h-0F7Fh -ASFR=0F80h-0FFFh -ABIGSFR=0F80h-0FFFh \
+  -Mdist/default/debug/LocoNetDriver.X.debug.map \
+  --md=C:\Users\user\AppData\Local\Temp\xcAs9ro.\driver_tmp_0.dat -E1 \
+  -ver=XC8 Compiler --acfsm=1493 -AHEAP=0B6h-0EEEh -pheap=HEAP \
+  -ACODE=00h-0FCFFh -ACONST=00h-0FCFFh -ASMALLCONST=01000h-010FFhx237 \
+  -AMEDIUMCONST=01000h-0FCFFh -ACOMRAM=01h-07Fh \
+  -AABS1=00h-0EEEh,0F00h-0F7Fh -ABIGRAM=01h-0EEEh,0F00h-0F7Fh \
+  -ARAM=080h-0FFh,0100h-01FFhx13,0E00h-0EEEh,0F00h-0F7Fh -ABANK0=080h-0FFh \
+  -ABANK1=0100h-01FFh -ABANK2=0200h-02FFh -ABANK3=0300h-03FFh \
+  -ABANK4=0400h-04FFh -ABANK5=0500h-05FFh -ABANK6=0600h-06FFh \
+  -ABANK7=0700h-07FFh -ABANK8=0800h-08FFh -ABANK9=0900h-09FFh \
+  -ABANK10=0A00h-0AFFh -ABANK11=0B00h-0BFFh -ABANK12=0C00h-0CFFh \
+  -ABANK13=0D00h-0DFFh -ABANK14=0E00h-0EEEh -ABANK15=0F00h-0F7Fh \
+  -ASFR=0F80h-0F9Bh,0F9Dh-0FD3h,0FD5h-0FDAh,0FE0h-0FE2h,0FE8h-0FEAh,0FF0h-0FFBh \
+  -ABIGSFR=0F80h-0F9Bh,0F9Dh-0FD3h,0FD5h-0FDAh,0FE0h-0FE2h,0FE8h-0FEAh,0FF0h-0FFBh \
   -ACONFIG=0300000h-030000Dh -AIDLOC=0200000h-0200007h \
   -AEEDATA=0F00000h-0F003FFh -peeprom_data=EEDATA \
   -preset_vec=00h,intcode,intcodelo=018h,powerup,init -pramtop=01000h \
@@ -29,8 +31,8 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\user\AppData\Local\Temp\xcAsfvs.\driver_tmp_9.o \
-  dist/default/production\LocoNetDriver.X.production.o 
+  C:\Users\user\AppData\Local\Temp\xcAs9ro.\driver_tmp_9.o \
+  dist/default/debug\LocoNetDriver.X.debug.o 
 
 Object code version is 3.11
 
@@ -39,13 +41,13 @@ Machine type is 18F4620
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\user\AppData\Local\Temp\xcAsfvs.\driver_tmp_9.o
-                heap                                 B6       B6      ECA       B6       7
+C:\Users\user\AppData\Local\Temp\xcAs9ro.\driver_tmp_9.o
+                heap                                 B6       B6      E39       B6       7
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
                 init                                140      140        4        C       0
-                reset_vec                             0        0        4        0       0
-dist/default/production\LocoNetDriver.X.production.o
+                reset_vec                             0        0        6        0       0
+dist/default/debug\LocoNetDriver.X.debug.o
                 intcodelo                            18       18      128        C       0
                 idloc                            200000   200000        8        0       5
                 config                           300000   300000        E        0       4
@@ -92,12 +94,12 @@ dist/default/production\LocoNetDriver.X.production.o
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   HEAP           
-                heap                                 B6       B6      ECA         7
+                heap                                 B6       B6      E39         7
 
         CLASS   CODE           
                 intcodelo                            18       18      128         0
                 init                                140      140        4         0
-                reset_vec                             0        0        4         0
+                reset_vec                             0        0        6         0
                 text31                             1E28     1E28       B0         0
                 text30                             240C     240C       30         0
                 text29                             1D6E     1D6E       BA         0
@@ -205,11 +207,11 @@ TOTAL           Name                               Link     Load   Length     Sp
 
 SEGMENTS        Name                           Load    Length   Top    Selector   Space  Class
 
-                reset_vec                      000000  000004  000004         0       0  CODE    
+                reset_vec                      000000  000006  000006         0       0  CODE    
                 cstackCOMRAM                   000001  000058  000059         1       1  COMRAM  
                 intcodelo                      000018  00012C  000144         C       0  CODE    
                 cstackBANK0                    000080  000036  0000B6        80       1  BANK0   
-                heap                           0000B6  000ECA  000F80        B6       7  HEAP    
+                heap                           0000B6  000E39  000EEF        B6       7  HEAP    
                 smallconst                     001000  000002  001002       800       0  SMALLCON
                 text26                         001002  0014FE  002500       801       0  CODE    
 
@@ -223,7 +225,7 @@ UNUSED ADDRESS RANGES
         BANK11           000B00-000BFF              100
         BANK12           000C00-000CFF              100
         BANK13           000D00-000DFF              100
-        BANK14           000E00-000EFF              100
+        BANK14           000E00-000EEE               EF
         BANK15           000F00-000F7F               80
         BANK2            000200-0002FF              100
         BANK3            000300-0003FF              100
@@ -234,20 +236,32 @@ UNUSED ADDRESS RANGES
         BANK8            000800-0008FF              100
         BANK9            000900-0009FF              100
         BIGRAM           000059-00007F               27
-                         0000B6-000F7F              ECA
-        BIGSFR           000F80-000FFF               80
-        CODE             000004-000017               14
+                         0000B6-000EEE              E39
+                         000F00-000F7F               80
+        BIGSFR           000F80-000F9B               1C
+                         000F9D-000FD3               37
+                         000FD5-000FDA                6
+                         000FE0-000FE2                3
+                         000FE8-000FEA                3
+                         000FF0-000FFB                C
+        CODE             000006-000017               12
                          000144-000FFF              EBC
-                         002500-00FFFF             DB00
+                         002500-00FCFF             D800
         COMRAM           000059-00007F               27
-        CONST            000004-000017               14
+        CONST            000006-000017               12
                          000144-000FFF              EBC
-                         002500-00FFFF             DB00
+                         002500-00FCFF             D800
         EEDATA           F00000-F003FF              400
-        MEDIUMCONST      002500-00FFFF             DB00
-        RAM              0000B6-000F7F              100
-        SFR              000F80-000FFF               80
-        SMALLCONST       002500-00FFFF              100
+        MEDIUMCONST      002500-00FCFF             D800
+        RAM              0000B6-000EEE              100
+                         000F00-000F7F               80
+        SFR              000F80-000F9B               1C
+                         000F9D-000FD3               37
+                         000FD5-000FDA                6
+                         000FE0-000FE2                3
+                         000FE8-000FEA                3
+                         000FF0-000FFB                C
+        SMALLCONST       002500-00FCFF              100
 
                                   Symbol Table
 
@@ -325,14 +339,14 @@ __HdataBANK0                         dataBANK0    000000
 __Heeprom_data                       eeprom_data  000000
 __Hfarbss                            farbss       000000
 __Hfardata                           fardata      000000
-__Hheap                              heap         000F80
+__Hheap                              heap         000EEF
 __Hibigdata                          ibigdata     000000
 __Hidata                             idata        000000
 __HidataBANK0                        idataBANK0   000000
 __Hidloc                             idloc        200008
 __Hifardata                          ifardata     000000
 __Hinit                              init         000144
-__Hintcode                           intcode      000004
+__Hintcode                           intcode      000006
 __Hintcode_body                      intcode_body 000000
 __Hintcodelo                         intcodelo    000140
 __Hintentry                          intentry     000000
@@ -350,7 +364,7 @@ __Hramtop                            ramtop       001000
 __Hrbit                              rbit         000000
 __Hrbss                              rbss         000000
 __Hrdata                             rdata        000000
-__Hreset_vec                         reset_vec    000004
+__Hreset_vec                         reset_vec    000006
 __Hrparam                            rparam       000000
 __Hsfr                               sfr          000000
 __Hsmallconst                        smallconst   001002
@@ -438,7 +452,7 @@ __LidataBANK0                        idataBANK0   000000
 __Lidloc                             idloc        000000
 __Lifardata                          ifardata     000000
 __Linit                              init         000140
-__Lintcode                           intcode      000004
+__Lintcode                           intcode      000006
 __Lintcode_body                      intcode_body 000000
 __Lintcodelo                         intcodelo    000018
 __Lintentry                          intentry     000000
@@ -503,7 +517,7 @@ __S0                                 (abs)        002500
 __S1                                 (abs)        0000B6
 __S4                                 (abs)        000000
 __S5                                 (abs)        000000
-__S7                                 (abs)        000F80
+__S7                                 (abs)        000EEF
 __XTAL_FREQ                          dataBANK0    0000B2
 ___awmod                             text31       001E28
 ___awmod@counter                     cstackCOMRAM 000005
@@ -515,7 +529,7 @@ ___expand_heap@n                     cstackBANK0  000084
 ___expand_heap@new_brkp              cstackBANK0  000086
 ___expand_heap@pn                    cstackBANK0  000080
 ___freelist                          bssBANK0     0000AC
-___heap_hi                           heap         000F80
+___heap_hi                           heap         000EEF
 ___heap_lo                           heap         0000B6
 ___inthi_sp                          stack        000000
 ___inthi_stack_hi                    stack        000000

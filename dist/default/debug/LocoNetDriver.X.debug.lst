@@ -1,7 +1,7 @@
 
 
 Microchip MPLAB XC8 Assembler V2.45 build 20230818022343 
-                                                                                               Sun Apr 07 08:34:56 2024
+                                                                                               Sun Apr 07 08:36:10 2024
 
 Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1 
      1                           	processor	18F4620
@@ -108,19 +108,19 @@ Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1
     94   000000                     _SPBRGH	set	4016
     95   000000                     _TXREG	set	4013
     96   000000                     _PIR1bits	set	3998
-    97   000000                     _RCREG	set	4014
-    98   000000                     _OSCTUNEbits	set	3995
-    99   000000                     _OSCCONbits	set	4051
-   100   000000                     _PORTCbits	set	3970
-   101   000000                     _LATBbits	set	3978
-   102   000000                     _TRISBbits	set	3987
-   103   000000                     _OSCTUNE	set	3995
-   104   000000                     _PIE1bits	set	3997
-   105   000000                     _IPR1bits	set	3999
-   106   000000                     _RCSTAbits	set	4011
-   107   000000                     _TXSTAbits	set	4012
-   108   000000                     _CMCON	set	4020
-   109   000000                     _OSCCON	set	4051
+    97   000000                     _PIE1bits	set	3997
+    98   000000                     _IPR1bits	set	3999
+    99   000000                     _RCREG	set	4014
+   100   000000                     _RCSTAbits	set	4011
+   101   000000                     _TXSTAbits	set	4012
+   102   000000                     _CMCON	set	4020
+   103   000000                     _OSCCON	set	4051
+   104   000000                     _OSCTUNEbits	set	3995
+   105   000000                     _OSCCONbits	set	4051
+   106   000000                     _PORTCbits	set	3970
+   107   000000                     _LATBbits	set	3978
+   108   000000                     _TRISBbits	set	3987
+   109   000000                     _OSCTUNE	set	3995
    110   000000                     _INTCONbits	set	4082
    111   000000                     _TRISCbits	set	3988
    112   000000                     _TRISAbits	set	3986
@@ -1608,9 +1608,9 @@ Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1
   1558   001EFA                     u1970:
   1559   001EFA                     
   1560                           ; BSR set to: 0
-  1561   001EFA  0E80               	movlw	low ___heap_hi
+  1561   001EFA  0EEF               	movlw	low ___heap_hi
   1562   001EFC  6FA6               	movwf	_brkp& (0+255),b
-  1563   001EFE  0E0F               	movlw	high ___heap_hi
+  1563   001EFE  0E0E               	movlw	high ___heap_hi
   1564   001F00  6FA7               	movwf	(_brkp+1)& (0+255),b
   1565   001F02                     l1034:
   1566                           
@@ -4305,9 +4305,9 @@ Microchip MPLAB XC8 C Compiler v2.45 (Free license) build 20230818022343 Og1
   4133   001FA8                     i1u159_20:
   4134   001FA8                     
   4135                           ; BSR set to: 0
-  4136   001FA8  0E80               	movlw	low ___heap_hi
+  4136   001FA8  0EEF               	movlw	low ___heap_hi
   4137   001FAA  6FA6               	movwf	_brkp& (0+255),b
-  4138   001FAC  0E0F               	movlw	high ___heap_hi
+  4138   001FAC  0E0E               	movlw	high ___heap_hi
   4139   001FAE  6FA7               	movwf	(_brkp+1)& (0+255),b
   4140   001FB0                     i1l1034:
   4141                           
@@ -5183,7 +5183,7 @@ Auto Spaces:
     BANK11          256      0       0
     BANK12          256      0       0
     BANK13          256      0       0
-    BANK14          256      0       0
+    BANK14          239      0       0
     BANK15          128      0       0
 
 Pointer List with Targets:
@@ -5769,66 +5769,84 @@ Call Graph Tables:
 
  Address spaces:
 Name               Size   Autos  Total    Cost      Usage
-BIGRAM             F7F      0       0      49        0.0%
+BIGRAM             EEE      0       0      51        0.0%
 EEDATA             400      0       0       0        0.0%
-BITBANK14          100      0       0      33        0.0%
-BANK14             100      0       0      34        0.0%
-BITBANK13          100      0       0      31        0.0%
-BANK13             100      0       0      32        0.0%
-BITBANK12          100      0       0      29        0.0%
-BANK12             100      0       0      30        0.0%
-BITBANK11          100      0       0      27        0.0%
-BANK11             100      0       0      28        0.0%
-BITBANK10          100      0       0      25        0.0%
-BANK10             100      0       0      26        0.0%
-BITBANK9           100      0       0      23        0.0%
-BANK9              100      0       0      24        0.0%
-BITBANK8           100      0       0      21        0.0%
-BANK8              100      0       0      22        0.0%
-BITBANK7           100      0       0      19        0.0%
-BANK7              100      0       0      20        0.0%
-BITBANK6           100      0       0      17        0.0%
-BANK6              100      0       0      18        0.0%
-BITBANK5           100      0       0      15        0.0%
-BANK5              100      0       0      16        0.0%
-BITBANK4           100      0       0      13        0.0%
-BANK4              100      0       0      14        0.0%
-BITBANK3           100      0       0      10        0.0%
-BANK3              100      0       0      11        0.0%
-BITBANK2           100      0       0       8        0.0%
-BANK2              100      0       0       9        0.0%
-BITBANK1           100      0       0       6        0.0%
-BANK1              100      0       0       7        0.0%
-BITBANK15           80      0       0      35        0.0%
-BANK15              80      0       0      36        0.0%
-BITBANK0            80      0       0       4        0.0%
-BANK0               80     26      36       5       42.2%
+BITBANK13          100      0       0      29        0.0%
+BANK13             100      0       0      30        0.0%
+BITBANK12          100      0       0      27        0.0%
+BANK12             100      0       0      28        0.0%
+BITBANK11          100      0       0      25        0.0%
+BANK11             100      0       0      26        0.0%
+BITBANK10          100      0       0      23        0.0%
+BANK10             100      0       0      24        0.0%
+BITBANK9           100      0       0      21        0.0%
+BANK9              100      0       0      22        0.0%
+BITBANK8           100      0       0      19        0.0%
+BANK8              100      0       0      20        0.0%
+BITBANK7           100      0       0      17        0.0%
+BANK7              100      0       0      18        0.0%
+BITBANK6           100      0       0      15        0.0%
+BANK6              100      0       0      16        0.0%
+BITBANK5           100      0       0      13        0.0%
+BANK5              100      0       0      14        0.0%
+BITBANK4           100      0       0      11        0.0%
+BANK4              100      0       0      12        0.0%
+BITBANK3           100      0       0       9        0.0%
+BANK3              100      0       0      10        0.0%
+BITBANK2           100      0       0       7        0.0%
+BANK2              100      0       0       8        0.0%
+BITBANK1           100      0       0       5        0.0%
+BANK1              100      0       0       6        0.0%
+BITBANK14           EF      0       0      31        0.0%
+BANK14              EF      0       0      32        0.0%
+BITBANK15           80      0       0      33        0.0%
+BANK15              80      0       0      34        0.0%
+BITBANK0            80      0       0       3        0.0%
+BANK0               80     26      36       4       42.2%
+BIGRAM_1            80      0       0      50        0.0%
 BITCOMRAM           7E      0       0       0        0.0%
 COMRAM              7E     46      57       1       69.0%
-BITBIGSFRhhl        1E      0       0      38        0.0%
-BITBIGSFRhlhhl      14      0       0      40        0.0%
-BITBIGSFRhhh         D      0       0      37        0.0%
-BITBIGSFRhlllh       B      0       0      43        0.0%
-BITBIGSFRlllh        7      0       0      47        0.0%
-BITBIGSFRllh         7      0       0      46        0.0%
-BITBIGSFRlh          6      0       0      45        0.0%
-BITBIGSFRhllhhh      3      0       0      42        0.0%
-BITBIGSFRhlhl        3      0       0      41        0.0%
-BITBIGSFRhlhhh       2      0       0      39        0.0%
-BITBIGSFRllll        2      0       0      48        0.0%
-BITBIGSFRhlllll      1      0       0      44        0.0%
+BITBIGSFR_1hhl      14      0       0      41        0.0%
+BITBIGSFR_1llh       B      0       0      44        0.0%
+BITBIGSFR_5h         9      0       0      35        0.0%
+BITBIGSFRllh         7      0       0      47        0.0%
+BITBIGSFRlh          7      0       0      46        0.0%
+BITBIGSFRh           6      0       0      45        0.0%
+BITBIGSFR_2          6      0       0      39        0.0%
+BITBIGSFR_1lhhh      3      0       0      43        0.0%
+BITBIGSFR_1hl        3      0       0      42        0.0%
+BITBIGSFR_4          3      0       0      37        0.0%
+BITBIGSFR_3          3      0       0      38        0.0%
+BITBIGSFR_1hhh       2      0       0      40        0.0%
+BITBIGSFR_5l         2      0       0      36        0.0%
+BITBIGSFRlll         2      0       0      48        0.0%
+BIGSFR_5             0      0       0     200        0.0%
+BIGSFR_4             0      0       0     200        0.0%
+BIGSFR_3             0      0       0     200        0.0%
+BIGSFR_2             0      0       0     200        0.0%
+BIGSFR_1             0      0       0     200        0.0%
 BIGSFR               0      0       0     200        0.0%
+BITSFR_5             0      0       0     200        0.0%
+SFR_5                0      0       0     200        0.0%
+BITSFR_4             0      0       0     200        0.0%
+SFR_4                0      0       0     200        0.0%
+BITSFR_3             0      0       0     200        0.0%
+SFR_3                0      0       0     200        0.0%
+BITSFR_2             0      0       0     200        0.0%
+SFR_2                0      0       0     200        0.0%
+BITSFR_1             0      0       0     200        0.0%
+SFR_1                0      0       0     200        0.0%
 BITSFR               0      0       0     200        0.0%
 SFR                  0      0       0     200        0.0%
 STACK                0      0       0       2        0.0%
 NULL                 0      0       0       0        0.0%
-ABS                  0      0      8D      12        0.0%
-DATA                 0      0      8D       3        0.0%
+ABS                  0      0      8D      49        0.0%
+DATA                 0      0      8D      52        0.0%
 CODE                 0      0       0       0        0.0%
 
 
 Microchip Technology PIC18 Macro Assembler V2.45 build 20230818022343 
-Symbol Table                                                                                   Sun Apr 07 08:34:56 2024
+Symbol Table                                                                                   Sun Apr 07 08:36:10 2024
 
                        ?_lnInitQueue 00A0                                    __ 0056  
                       ?_lnInitEusart 0001                                   l45 228E  
@@ -6134,7 +6152,7 @@ Symbol Table                                                                    
                            ??_lnInit 00A4                          __pdataBANK0 00B2  
                            ??_malloc 0096                             ??_setBRG 0080  
              __end_of_getRandomValue 240C                  ?___simple_search_fl 0080  
-                __end_of_lnInitQueue 21AC                            ___heap_hi 0F80  
+                __end_of_lnInitQueue 21AC                            ___heap_hi 0EEF  
                           ___heap_lo 00B6                          __pbssCOMRAM 0047  
                       __pcstackBANK0 0080                 ??___simple_search_fl 0082  
                 __end_of_isQueueFull 243C                __end_of___expand_heap 1F86  

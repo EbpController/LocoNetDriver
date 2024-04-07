@@ -126,6 +126,15 @@ void __interrupt(low_priority) lnIsr(void)
                     free(lnTxMessage->lnData);
                     free(lnTxMessage);
                 }
+                if (LNCONbits.TMR1_MODE != 2)
+                {
+                    // if timer mode != 2 (timer in linebreak mode), meaning
+                    // that the linebreak detection is not comming from this
+                    // device, then restart the timer in linebrak mode
+                    // this is necessary to extend the time in order to
+                    // transmitting messages
+                    startLinebreakExtension();
+                }
             }
             else
             {
@@ -437,6 +446,15 @@ void startLinebreak(void)
     RCSTAbits.SPEN = false;         // stop EUSART
     PORTCbits.RC6 = true;
 
+    WRITETIMER1(~900);              // linebreak = 900µs
+    LNCONbits.TMR1_MODE = 2;        // 2: timer 1 in linebreak mode
+}
+
+/**
+ * start the linebreak delay (extension)
+ */
+void startLinebreakExtension(void)
+{
     WRITETIMER1(~900);              // linebreak = 900µs
     LNCONbits.TMR1_MODE = 2;        // 2: timer 1 in linebreak mode
 }
